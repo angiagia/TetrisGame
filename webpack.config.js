@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.ts',
+    entry: './index.ts',
     output: {
         filename: 'bundle.[hash].js',
         path: path.resolve(__dirname, 'dist'),
@@ -29,7 +29,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: 'src/index.html',
+            template: 'index.html',
             filename: 'index.html',
         }),
     ],
